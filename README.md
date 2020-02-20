@@ -3,3 +3,5 @@
 ## 资料
 
 ## 工具
+
+git commit --amend --no-edit
