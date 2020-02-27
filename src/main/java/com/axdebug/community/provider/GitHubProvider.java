@@ -24,7 +24,7 @@ public class GitHubProvider {
         MediaType mediaType = MediaType.get("application/json; charset=utf-8");
 
         OkHttpClient client = new OkHttpClient();
-        RequestBody body = RequestBody.create(mediaType, JSON.toJSONString(accesstokenDTO));
+        RequestBody body = RequestBody.create(JSON.toJSONString(accesstokenDTO),mediaType);
         Request request = new Request.Builder()
                 .url(url)
                 .post(body)
